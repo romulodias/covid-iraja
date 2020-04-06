@@ -22,7 +22,6 @@ export class PaisesListagemComponent implements OnInit {
   listar() {
     this.paisesService.listar().subscribe((retorno) => {
       this.paises = retorno
-      console.log(this.paises);
       this.getVision(this.paises);
     }, (error) => {
       // Toast errot and return DEFAULT_PHOTO from Constants
@@ -57,7 +56,6 @@ export class PaisesListagemComponent implements OnInit {
             break;
         }
         this.porcentagemMortos = (element.deaths / element.cases) * 100;
-        console.log(this.porcentagemMortos)
         this.paisesFormatado.push({
           "pais": this.nomepais,
           "casos": element.cases,
