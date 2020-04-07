@@ -1,0 +1,6 @@
+applications:
+  name: covid-iraja
+  buildpack: staticfile_buildpack
+  host: covid-iraja
+  memory: 256M
+  path: dist
