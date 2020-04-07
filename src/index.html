@@ -11,15 +11,3 @@
   <app-root></app-root>
 </body>
 </html>
-
-server {
-  server_name covid-iraja;
-
-  index index.html;
-
-  root /path/to/app;
-
-  location / {
-      try_files $uri /index.html;
-  }
-}
