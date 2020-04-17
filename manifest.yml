@@ -1,5 +1,6 @@
 applications :
-- name: covid-iraja
-path : ./dist/Covid-iraja
-  buildpacks: 
-   - https://github.com/cloudfoundry/staticfile-buildpack
+- name: "covid-iraja"
+path : "./dist/Covid-iraja"
+memory : 256M
+buildpacks : 
+ - "https://github.com/cloudfoundry/staticfile-buildpack.git"
