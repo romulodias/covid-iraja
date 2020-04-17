@@ -1,6 +1,5 @@
 applications :
 - name: covid-iraja
 path : ./dist/Covid-iraja
-command: "$HOME/boot.sh"
   buildpacks: 
    - https://github.com/cloudfoundry/staticfile-buildpack
