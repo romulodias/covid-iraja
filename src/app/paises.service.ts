@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PaisesService {
 
-  paisesCovidUrl = 'https://corona.lmao.ninja/countries'
+  paisesCovidUrl = 'https://corona.lmao.ninja/v2/countries'
 
   constructor(private http: HttpClient) { }
 
